@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo"
+        ><img src="/src/assets/icons/jela-header-logo.png" alt="hero logo"
+      /></a>
+      <nav class="nav" id="nav" aria-expanded="false">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="ham-btn"
+        aria-label="ham button"
+        data-active="false"
+        tabindex="0"
+        aria-controls="nav"
+      >
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+      </button>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__headline-wrapper">
+          <div class="hero__headline-wrapper--first-row">
+            <img
+              src="/src/assets/icons/jela-hero-logo.png"
+              alt="hero logo"
+              class="hero-logo"
+            />
+            <div class="hero__headline-text-wrapper">
+              <span>jednostavno.</span>
+              <span style="animation-delay: 1s">učinkovito.</span>
+              <span style="animation-delay: 2s">sigurno.</span>
+            </div>
+            <p class="hero__subheadline">
+              Probajte našu aplikaciju koja pruža lakšu organizaciju lova i
+              praćenje aktivnosti lovačkih društava.
+            </p>
+          </div>
+          <a href="#" class="cta-btn"
+            >saznaj više o aplikaciji
+            <img
+              src="/src/assets/icons/cta-arrow-right-icon.svg"
+              aria-hidden="true"
+          /></a>
+        </div>
+        <div class="socials">
+          <a href="#"
+            ><img src="/src/assets/icons/fb-icon.svg" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="/src/assets/icons/linkedin-icon.svg" alt="linkedin"
+          /></a>
+          <a href="#"
+            ><img src="/src/assets/icons/instagram-icon.svg" alt="instagram"
+          /></a>
+        </div>
+        <a href="#" class="scroll-down-btn"
+          ><img src="/src/assets/icons/scroll-down-icon.svg" alt="scroll down"
+        /></a>
+      </section>
+    </main>
+  </body>
+</html>

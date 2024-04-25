@@ -1,0 +1,68 @@
+body {
+  font-family: "Clash Display", sans-serif;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+p {
+  letter-spacing: 1px;
+}
+
+.hero__headline-text-wrapper span {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+}
+.hero__headline-text-wrapper span:nth-child(1) {
+  animation: first 2s forwards;
+}
+@keyframes first {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero__headline-text-wrapper span:nth-child(2) {
+  animation: second 2s forwards;
+}
+@keyframes second {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero__headline-text-wrapper span:nth-child(3) {
+  animation: third 2s forwards;
+}
+@keyframes third {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero__subheadline {
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
