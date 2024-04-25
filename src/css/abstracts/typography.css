@@ -66,3 +66,14 @@ p {
   line-height: 150%;
   margin-bottom: 2rem;
 }
+.jela-heading {
+  font-size: clamp(2rem, 7vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.jela__subheading {
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}

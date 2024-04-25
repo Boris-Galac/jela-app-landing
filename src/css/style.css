@@ -9,5 +9,7 @@
 @import "components/footer.css";
 /* pages */
 @import "sections/hero.css";
+@import "sections/o-nama.css";
+@import "sections/jela.css";
 /* utilities */
 @import "utilities/globals.css";

@@ -2,3 +2,9 @@
   width: min(100% - 32px, 1024px);
   margin-inline: auto;
 }
+.font-dark {
+  color: var(--dark);
+}
+.icon {
+  object-fit: contain;
+}
