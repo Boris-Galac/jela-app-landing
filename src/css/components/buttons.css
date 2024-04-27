@@ -24,6 +24,18 @@ button {
   box-shadow: 0 0 2rem hsl(60, 78%, 58%);
   scale: 1.06;
 }
+.scroll-down-btn {
+  right: 1rem;
+  animation: scroll-down-btn 2s ease-in-out alternate infinite;
+}
+@keyframes scroll-down-btn {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
 .scroll-to-top-btn {
   transition: 0.2s;
   position: fixed;

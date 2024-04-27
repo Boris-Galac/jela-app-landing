@@ -1,6 +1,7 @@
 .o-nama {
   padding-block: 6rem;
   isolation: isolate;
+  background-color: var(--white);
 }
 .o-nama::after {
   content: "";
