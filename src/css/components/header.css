@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 3;
   inset: auto 0;
+  transition: 0.5s;
 }
 .header__logo {
   font-size: 2rem;

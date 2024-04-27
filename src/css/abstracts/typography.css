@@ -77,3 +77,10 @@ p {
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
+.funkcionalnost-heading {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.funkcionalnost-heading span {
+  font-weight: 600;
+}

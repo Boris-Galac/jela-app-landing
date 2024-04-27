@@ -1,0 +1,37 @@
+.contact {
+  isolation: isolate;
+  padding-block: 6rem;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/src/assets/images/contact-overlay.jpg") no-repeat center
+    center/cover;
+  z-index: -1;
+}
+.contact__wrapper {
+}
+.contact-heading {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact-me-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--white);
+  border-radius: 6px;
+  outline: 2px solid var(--dark);
+  padding-block: 0.6rem;
+  padding-inline: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  width: max-content;
+  margin-inline: auto;
+}

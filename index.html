@@ -16,15 +16,24 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo"
+      <a href="index.html" class="header__logo"
         ><img src="/src/assets/icons/jela-header-logo.png" alt="hero logo"
       /></a>
       <nav class="nav" id="nav" aria-expanded="false">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Početna</a>
+          </li>
+          <li class="nav__item">
+            <a href="#o-nama" class="nav__link">O nama</a>
+          </li>
+          <li class="nav__item"><a href="#jela" class="nav__link">JELA</a></li>
+          <li class="nav__item">
+            <a href="#funkcionalnost" class="nav__link">Funkcionalnost</a>
+          </li>
+          <li class="nav__item">
+            <a href="#kontakt" class="nav__link">Kontakt</a>
+          </li>
         </ul>
       </nav>
       <button
@@ -59,7 +68,7 @@
               praćenje aktivnosti lovačkih društava.
             </p>
           </div>
-          <a href="#" class="cta-btn"
+          <a href="#jela" class="cta-btn"
             >saznaj više o aplikaciji
             <img
               src="/src/assets/icons/cta-arrow-right-icon.svg"
@@ -77,12 +86,12 @@
             ><img src="/src/assets/icons/instagram-icon.svg" alt="instagram"
           /></a>
         </div>
-        <a href="#" class="scroll-down-btn"
+        <a href="#jela" class="scroll-down-btn"
           ><img src="/src/assets/icons/scroll-down-icon.svg" alt="scroll down"
         /></a>
       </section>
       <!-- SECTION O NAMA -->
-      <section class="o-nama">
+      <section id="o-nama" class="o-nama">
         <div class="container">
           <div class="o-nama__wrapper">
             <div class="o-nama__row">
@@ -106,7 +115,7 @@
         </div>
       </section>
       <!-- SECTION JELA -->
-      <section class="jela">
+      <section id="jela" class="jela">
         <div class="container">
           <div class="jela__wrapper">
             <h2 class="h2-heading jela-heading">
@@ -188,6 +197,175 @@
           </div>
         </div>
       </section>
+      <!-- SECTION FEATURE -->
+      <section class="feature">
+        <div class="feature__wrapper">
+          <h2 class="h2-heading feature-heading">Olakšana komunikacija</h2>
+          <div class="feature__inner-wrapper">
+            <img
+              src="/src/assets/images/komunikacija-illustration.svg"
+              alt="communication illustration"
+              class="icon"
+            />
+            <p class="paragraph feature--paragraph">
+              Omogućite jednostavnu komunikaciju među članovima lovačkog
+              društva, dijeljenje iskustava, fotografija i savjeta.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION JELA -->
+      <section id="funkcionalnost" class="funkcionalnost">
+        <div class="container">
+          <div class="funkcionalnost__wrapper">
+            <h2 class="h2-heading funkcionalnost-heading">
+              FUNKCIONALNOSTI <span>JELA</span> APLIKACIJE
+            </h2>
+            <div class="funkcionalnost__block-wrapper">
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/baza-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Aplikacija sadrži bazu članova, svih podataka o lovcima
+                  (kartica lovca, analitika lovaca, uplata bodova i sl.)
+                </p>
+              </article>
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/popis-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Uvijek imate popis lovova, izgona i akcija koje su u tijeku,
+                  te ju je moguće napraviti na tabletu u šumi bez nema signala.
+                </p>
+              </article>
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/month-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Analiza uplata članarina na mjesečnoj razini, dokupa obaveza.
+                </p>
+              </article>
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/pas-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Također možete naći i bazu pasa u lovačkom društvu koji su
+                  vezani uz profil lovca.
+                </p>
+              </article>
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/ceka-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Imamo također i popis čeka za lovce, te svaku čeku možete
+                  rezerzvirati putem mobitela vrlo jednostavno.
+                </p>
+              </article>
+              <article class="funkcionalnost__article">
+                <img
+                  src="/src/assets/icons/admin-illustration.png"
+                  alt="illustration"
+                />
+                <p class="paragraph">
+                  Administracija grupa/sekcija, lokacija i čeka...
+                </p>
+              </article>
+            </div>
+          </div>
+          <img
+            class="jela__app-image"
+            src="/src/assets/images/app-img.png"
+            alt="app image"
+          />
+        </div>
+      </section>
+      <!-- SECTION DOWNLOAD -->
+      <section class="download-jela">
+        <div class="download-jela__row">
+          <h2 class="h2-heading download-app-heading">
+            Otvori demo aplikaciju i isprobaj novu eru lova
+          </h2>
+          <a class="see-demo-btn" href="#"
+            >Pogledaj demo aplikaciju
+            <img
+              src="/src/assets/icons/download-btn-arrow-right-icon.svg"
+              alt="arrow right"
+          /></a>
+        </div>
+        <div class="download-jela__row">
+          <img
+            src="/src/assets/images/download-app-img.jpg"
+            alt="mobile image"
+          />
+        </div>
+      </section>
+      <!-- SECTION  -->
+      <section id="kontakt" class="contact">
+        <div class="container">
+          <div class="contact__wrapper">
+            <h2 class="h2-heading contact-heading">
+              ukoliko imate neki upit slobodno nam se javite
+            </h2>
+            <a href="mailto:nedic.marijan@gmail.com" class="contact-me-btn"
+              >pošalji nam upit
+              <img src="/src/assets/icons/gmail-icon.png" aria-hidden="true"
+            /></a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <img
+            src="/src/assets/images/footer-logo-img.png"
+            alt="footer logo of jela"
+            class="footer__logo"
+          />
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="index.html" class="footer__link">Početna</a>
+              </li>
+              <li class="footer__item">
+                <a href="#o-nama" class="footer__link">O nama</a>
+              </li>
+              <li class="footer__item">
+                <a href="#jela" class="footer__link">JELA</a>
+              </li>
+              <li class="footer__item">
+                <a href="#funkcionalnost" class="footer__link"
+                  >Funkcionalnost</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#kontakt" class="footer__link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 - All Rights Reserved.</p>
+        <p>Website kreirao i uredio: GALAC-DESIGN.</p>
+      </div>
+    </footer>
+    <button
+      class="back-to-top-btn"
+      data-visible="false"
+      aria-label="scroll to top of the page"
+    >
+      <img src="/src/assets/icons/top-icon.svg" alt="scroll to top icon" />
+    </button>
   </body>
 </html>

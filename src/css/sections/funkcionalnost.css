@@ -1,0 +1,65 @@
+.funkcionalnost {
+  padding-block: 6rem;
+  isolation: isolate;
+  overflow: hidden;
+  padding-bottom: 20rem;
+}
+.funkcionalnost::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: url("/src/assets/images/funkcionalnost-overlay.jpg") no-repeat
+    center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.funkcionalnost__block-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 1rem;
+}
+.funkcionalnost-heading {
+  margin-bottom: 4rem;
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+.funkcionalnost__article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.133);
+  border-radius: 6px;
+  max-width: 70rem;
+  width: 100%;
+}
+.funkcionalnost__article:nth-child(odd) img {
+  order: 2;
+}
+.jela__app-image {
+  bottom: -4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+@media (min-width: 960px) {
+  .funkcionalnost {
+    padding-block: 6rem;
+    isolation: isolate;
+    overflow: hidden;
+    padding-bottom: 30rem;
+  }
+  .jela__app-image {
+    bottom: -23rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 65rem;
+    margin-inline: auto;
+  }
+}
