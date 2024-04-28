@@ -1,0 +1,51 @@
+/* from left opacity stagger */
+.hidden-left-stagger {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.hidden-left-stagger.active {
+  animation: left forwards 0.8s ease-out;
+}
+@keyframes left {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/* from left opacity stagger */
+.hidden-right-stagger {
+  opacity: 0;
+  transform: translateX(50%);
+}
+.hidden-right-stagger.active {
+  animation: right forwards 0.8s ease-out;
+}
+@keyframes right {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/* from bottom to top */
+.hidden-top-stagger {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.hidden-top-stagger.active {
+  animation: top forwards 0.8s ease-out;
+}
+@keyframes top {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}

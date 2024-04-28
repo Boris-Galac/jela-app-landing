@@ -16,4 +16,5 @@
 @import "sections/download.css";
 @import "sections/contact.css";
 /* utilities */
+@import "utilities/animations.css";
 @import "utilities/globals.css";

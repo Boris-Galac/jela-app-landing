@@ -19,6 +19,7 @@ button {
   border: 2px solid var(--white);
   box-shadow: 0 0 1rem hsl(60, 78%, 58%);
   transition: 0.5s;
+  z-index: 2;
 }
 .cta-btn:hover {
   box-shadow: 0 0 2rem hsl(60, 78%, 58%);
