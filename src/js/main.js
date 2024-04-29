@@ -12,6 +12,22 @@ hamBtn.addEventListener("click", (e) => {
   }
 });
 
+document.querySelectorAll(".nav__link").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    nav.setAttribute("aria-expanded", "false");
+    hamBtn.setAttribute("data-active", "false");
+  });
+});
+nav.addEventListener("click", (e) => {
+  if (
+    e.target.matches(".nav") &&
+    nav.getAttribute("aria-expanded") === "true"
+  ) {
+    nav.setAttribute("aria-expanded", "false");
+    hamBtn.setAttribute("data-active", "false");
+  }
+});
+
 /////////// HIDE HEADER ON SCROLL
 
 let lastScrollTop = 0;
