@@ -83,3 +83,48 @@ rightStagger.forEach((el) => observer.observe(el));
 // from bottom opacity stagger
 const bottomStagger = document.querySelectorAll(".hidden-top-stagger");
 bottomStagger.forEach((el) => observer.observe(el));
+
+// contact modal
+const contactModal = document.querySelector(".contact-modal");
+
+document.querySelectorAll(".contact-modal-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (btn.classList.contains("demo-pristup-btn")) {
+      document
+        .querySelector(".contact-modal-btn-wrapper")
+        .setAttribute("data-active", "false");
+
+      document.querySelector(".modal-form").setAttribute("data-active", "true");
+      document.querySelector(".textarea").setAttribute("data-active", "false");
+      document.querySelector(".demo-msg").setAttribute("data-active", "true");
+    }
+    if (btn.classList.contains("prijedlog-btn")) {
+      document
+        .querySelector(".contact-modal-btn-wrapper")
+        .setAttribute("data-active", "false");
+      document.querySelector(".modal-form").setAttribute("data-active", "true");
+      document.querySelector(".demo-msg").setAttribute("data-active", "false");
+      document.querySelector(".textarea").setAttribute("data-active", "true");
+    }
+  });
+});
+document.querySelector(".fa-xmark").addEventListener("click", (e) => {
+  document.querySelector(".modal-form").setAttribute("data-active", "false");
+  document
+    .querySelector(".contact-modal-btn-wrapper")
+    .setAttribute("data-active", "true");
+});
+document.querySelectorAll(".upit-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    contactModal.setAttribute("data-active", "true");
+    document
+      .querySelector(".contact-modal-btn-wrapper")
+      .setAttribute("data-active", "true");
+  });
+});
+window.addEventListener("click", (e) => {
+  if (e.target.matches(".contact-modal")) {
+    contactModal.setAttribute("data-active", "false");
+    document.querySelector(".modal-form").setAttribute("data-active", "false");
+  }
+});

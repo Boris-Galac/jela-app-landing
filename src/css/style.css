@@ -16,6 +16,7 @@
 @import "sections/funkcionalnost.css";
 @import "sections/download.css";
 @import "sections/contact.css";
+@import "sections/contact-modal.css";
 /* utilities */
 @import "utilities/animations.css";
 @import "utilities/globals.css";

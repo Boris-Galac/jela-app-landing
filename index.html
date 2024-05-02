@@ -16,6 +16,13 @@
       href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta property="og:image" content="preview.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
@@ -239,7 +246,7 @@
                     />
                     <p class="paragraph">
                       Budite informirani o svim važnim događajima, sastancima i
-                      novostima unutar vašeg društva - uskoro.
+                      novostima unutar Vašeg društva - uskoro.
                     </p>
                   </div>
                 </article>
@@ -357,12 +364,13 @@
           <h2 class="h2-heading download-app-heading">
             ZATRAŽI PRISTUP U DEMO APLIKACIJU I ISPROBAJ NOVU ERU LOVA
           </h2>
-          <a class="see-demo-btn" href="#"
-            >Zatraži pristup
+          <button class="see-demo-btn upit-btn">
+            Zatraži pristup
             <img
               src="/src/assets/icons/download-btn-arrow-right-icon.svg"
               alt="arrow right"
-          /></a>
+            />
+          </button>
         </div>
         <div class="download-jela__row">
           <img
@@ -371,7 +379,7 @@
           />
         </div>
       </section>
-      <!-- SECTION  -->
+      <!-- SECTION KONTAKT MODAL -->
       <section id="kontakt" class="contact">
         <div class="container">
           <div class="contact__wrapper">
@@ -379,68 +387,10 @@
               UKOLIKO IMATE NEKI UPIT I PRIJEDLOG, RADO ĆEMO ČUTI VAŠE
               MIŠLJENJE:
             </h2>
-            <form class="contact-form" method="post">
-              <div class="contact-form__input">
-                <label for="full-name">Ime i Prezime</label>
-                <input
-                  type="text"
-                  id="full-name"
-                  name="full-name"
-                  placeholder="Ivan Horvat"
-                  required
-                  aria-required="true"
-                  class="contact-form__input-element"
-                />
-              </div>
-              <div class="contact-form__input">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="ivan.horvat@gmail.com"
-                  required
-                  aria-required="true"
-                  class="contact-form__input-element"
-                />
-              </div>
-              <div class="contact-form__input">
-                <label for="message">Vaša poruka:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="Ostavite nam poruku..."
-                  required
-                  role="textbox"
-                  aria-required="true"
-                  class="contact-form__input-element"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="contact-form__input-submit flex-center"
-                name="submit"
-              >
-                <div class="svg-wrapper-1">
-                  <div class="svg-wrapper">
-                    <svg
-                      height="24"
-                      width="24"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <span>Pošaljite upit</span>
-              </button>
-            </form>
+            <button class="posalji-upit-btn upit-btn">
+              Pošalji nam prijedlog/Pitanje
+              <img src="/src/assets/icons/gmail-icon.png" alt="gmail icon" />
+            </button>
           </div>
         </div>
       </section>
@@ -488,5 +438,107 @@
     >
       <img src="/src/assets/icons/top-icon.svg" alt="scroll to top icon" />
     </button>
+    <div class="contact-modal" data-active="false">
+      <div class="contact-modal-btn-wrapper" data-active="true">
+        <button class="demo-pristup-btn contact-modal-btn">
+          Zahtjev za pristup na demo
+        </button>
+        <button class="prijedlog-btn contact-modal-btn">
+          Prijedlog/pitanje
+        </button>
+      </div>
+      <form action="#" class="modal-form" data-active="false">
+        <div class="modal-form-wrapper">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="contact__input-row">
+          <label for="name">Ime i prezime</label>
+          <input
+            type="text"
+            class="contact__input"
+            id="name"
+            placeholder="npr. Ivan Horvat"
+            required
+          />
+        </div>
+        <div class="contact__input-row">
+          <label for="funkcija">Funckija u lovačkom društvu</label>
+          <input
+            type="text"
+            class="contact__input"
+            id="funkcija"
+            placeholder="npr. tajnik"
+            required
+          />
+        </div>
+        <div class="contact__input-row">
+          <label for="drustvo">Lovačko društvo</label>
+          <input
+            type="text"
+            class="contact__input"
+            id="drustvo"
+            placeholder="npr. LD Jelen"
+            required
+          />
+        </div>
+        <div class="contact__input-row">
+          <label for="tel">Mobitel</label>
+          <input
+            type="tel"
+            class="contact__input"
+            id="tel"
+            placeholder="npr. 099 123 4567"
+            required
+          />
+        </div>
+        <div class="contact__input-row">
+          <label for="mail">Mail</label>
+          <input
+            type="email"
+            class="contact__input"
+            id="mail"
+            placeholder="npr. ivan.horvat@gmail.com"
+            required
+          />
+        </div>
+        <div class="contact__input-row textarea" data-active="false">
+          <label for="poruka">Poruka</label>
+          <textarea
+            placeholder="Ostavite Vašu poruku..."
+            name="poruka"
+            id="poruka"
+            rows="6"
+            cols="30"
+            required
+          ></textarea>
+        </div>
+        <p class="demo-msg" data-active="false">
+          Molim da mi otvorite demo okolinu kako bi isprobao aplikaciju.
+        </p>
+        <button
+          type="submit"
+          class="contact-form__input-submit flex-center"
+          name="submit"
+        >
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <span>Potvrdi</span>
+        </button>
+      </form>
+    </div>
   </body>
 </html>

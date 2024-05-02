@@ -1,0 +1,136 @@
+.contact-modal-btn-wrapper[data-active="true"] {
+  display: grid;
+}
+.contact-modal-btn-wrapper[data-active="false"] {
+  display: none;
+}
+.demo-msg[data-active="true"] {
+  display: block;
+}
+.demo-msg[data-active="false"] {
+  display: none;
+}
+.textarea[data-active="true"] {
+  display: grid;
+}
+.textarea[data-active="false"] {
+  display: none;
+}
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.566);
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+  padding-block: 5rem;
+  padding-inline: 1rem;
+}
+.contact-modal[data-active="true"] {
+  animation: contact-modal-on 0.5s forwards;
+}
+@keyframes contact-modal-on {
+  from {
+    pointer-events: none;
+    opacity: 0;
+  }
+  to {
+    pointer-events: visible;
+    opacity: 1;
+  }
+}
+.contact-modal[data-active="false"] {
+  animation: contact-modal-off 0.5s forwards;
+}
+@keyframes contact-modal-off {
+  from {
+    pointer-events: visible;
+    opacity: 1;
+  }
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+.contact-modal-btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.demo-pristup-btn,
+.prijedlog-btn {
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  width: 15rem;
+  border-radius: 100vmax;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+/* contact */
+.modal-form[data-active="false"] {
+  display: none;
+}
+.modal-form[data-active="true"] {
+  display: grid;
+}
+.modal-form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-xmark {
+  font-size: 1.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.fa-xmark:hover {
+  scale: 1.2;
+}
+.modal-form {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  outline: 2px solid hsl(0, 0%, 84%);
+  background-color: rgba(49, 78, 49, 0.811);
+  width: min(100%, 40rem);
+}
+.contact__input-row {
+  display: grid;
+  gap: 0.5rem;
+}
+.contact__input {
+  padding: 0.5rem;
+}
+.contact__input-row input {
+  padding: 0.5rem;
+  font: inherit;
+  border: 0;
+  transition: 0.15s;
+  border-radius: 5px;
+}
+.contact__input-row input:focus,
+.contact__input-row textarea:focus {
+  background-color: hsl(120, 100%, 95%);
+  outline: 2px solid rgb(20, 118, 20);
+  border-radius: 5px;
+  box-shadow: 0 0 0.5rem 5px rgb(9, 255, 9);
+  outline-offset: 4px;
+  border: 0;
+  transition: 0.15s;
+}
+.contact__input-row textarea {
+  padding: 0.5rem;
+  font: inherit;
+  transition: 0.15s;
+  border: 0;
+  border-radius: 5px;
+}
